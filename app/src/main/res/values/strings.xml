@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">FestivalApp</string>
+    <string name="str_filter_clothing">Clothing</string>
+    <string name="str_filter_jewlwery">Jewelery</string>
+    <string name="str_filter_armory">Armory</string>
+    <string name="str_filter_trinket">Trinket</string>
+    <string name="action_add_favourite">Add to Favourites</string>
+    <string name="action_purchase_app">Upgrade App</string>
+    <string name="action_purchase_suggestion">Suggestions</string>
+    <string name="action_add_marker">Add Marker</string>
+    <string name="action_clear_marker">Clear Marker</string>
+    <string name="action_my_wishlist">My Wish List</string>
+    <string name="action_suggestions">Suggestions</string>
+    <string name="saved_status">STATUS</string>
+    <string name="string_retry">Retry</string>
+    <string name="title_activity_add_new_wish_activty">AddNewWishActivty</string>
+    <string-array name="wishlist_arrays">
+        <item>Clothing</item>
+        <item>Jewelery</item>
+        <item>Armory</item>
+        <item>Trinket</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_free_user_map_activty">FreeUserMapActivty</string>
+    //in App purchase Strings
+    <string name="str_filter_txt">Filter</string>
+    <string name="str_filter_time">Time</string>
+    <string name="str_filter_stage">Stage</string>
+    <string name="str_filter_artist">Artist</string>
+    <string name="string_inapp_key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgcv5YJfJuHGutwd7Dj6juVuwVRh4ItCdt4ZOQjbBDWsoU/D054a6wzJze1CzddPsg4o5Cqedxf44w5fRE5FdzDM+B8DVGzGJZwMDyAfKgZr5zWNliG2S0EREWVi5cPZlAcom7jMIv6xe49xvpJNQojXfHjumYgaB4eJ20CAi1h8eCgzft1100RwBOc7AKD6zezOMtdKX876zgw9g/9Wj+GQ5dFhrJhAWlWNjuTISKuds3QYPochYa5CG0l5mn4P3cKL/VKYh0ECOiNQLobfwFjvw8SzmYlTKySOHqwFw3ovcdxARTV/WmEKMO2ztnvpT3zU9/BR5gQiHU2nWiHS7GQIDAQAB
+    </string>
+    <string name="title_activity_add_marker">Map</string>
+    <string name="string_descrition_upgrade_event">Event Schedule Upgrade $2.99 Single Festival Featurefilter by Time,Stage or Artist </string>
+    <string name="string_descrition_upgrade_map">Interactive Map Upgrade $2.99 Single Festival Feature - Locate food vendors, privies ,stages and set markers for your car or meet up points.</string>
+    <string name="string_descrition_upgrade_wishlsit">Wish List Upgrade Only $2.99 Single Festival Feature - Take photos of items you want to buy, With info on store, item and filters for you.</string>
+    <string name="string_descrition_upgrade_allfeature">All Feature Bundle $7.99 Single Festival feature - Get all 3 feature upgraded and save money </string>
+    <string name="string_not_rignt_now">Not Right Now</string>
+    <string name="string_text_view">Upgrade your App</string>
+    <string name="title_activity_calender_test">CalenderTestActivity</string>
+    <string name="title_activity_notification_actvity">NotificationActvity</string>
+
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#000"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    <TextView
+        android:textColor="#FFF"
+        android:id="@+id/event_time"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+<LinearLayout
+    android:weightSum="3"
+    android:background="@drawable/my_custom_background_linear"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_width="match_parent">
+<LinearLayout
+    android:id="@+id/layout_setitmer"
+    android:layout_height="wrap_content"
+    android:layout_width="0dp"
+    android:layout_gravity="center"
+    android:layout_weight="0.5">
+    <ImageView
+        android:id="@+id/image_setitmer"
+        android:paddingTop="3dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_clock"
+        android:layout_width="match_parent"/>
+</LinearLayout>
+    <View
+        android:layout_width="1dp"
+        android:paddingRight="3dp"
+        android:layout_height="match_parent"
+        android:background="#FFF"/>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+
+        android:layout_weight="1.5">
+        <TextView
+            android:textColor="#FFF"
+            android:id="@+id/title_event"
+            android:text="mainEvensat"
+            android:padding="4.5dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+    </LinearLayout>
+    <View
+        android:layout_width="1dp"
+        android:paddingRight="3dp"
+        android:layout_height="match_parent"
+        android:background="#FFF"/>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+
+        android:layout_weight="1">
+        <TextView
+            android:padding="4.5dp"
+            android:textColor="#FFF"
+            android:id="@+id/event_place"
+            android:text="Ground"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>

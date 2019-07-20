@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/splashbg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:id="@+id/layout_error"
+            android:visibility="gone"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+        <ImageView
+            android:src="@drawable/ic_error"
+            android:layout_height="80dp"
+            android:layout_width="80dp"/>
+            <TextView
+                android:id="@+id/txt_error_homepage"
+                android:textColor="#FFF"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Error Occured"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+            <Button
+                android:id="@+id/btn_retry"
+                android:text="@string/string_retry"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/success_layout"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+    <LinearLayout
+        android:id="@+id/layout_festival"
+        android:orientation="vertical"
+        android:layout_weight="1.5"
+        android:background="@drawable/my_custom_background_linear"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="0dp"
+        android:layout_width="match_parent">
+<TextView
+    android:id="@+id/txt_state_name"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:textSize="25sp"
+    android:textColor="#FFF"
+    android:text=""
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"/>
+        <ImageView
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:scaleType="fitXY"
+            android:id="@+id/image_state"
+            android:src="@drawable/image_festival"
+            android:layout_height="100dp"
+            android:layout_width="match_parent"/>
+
+      //Insert Festival list here
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+<LinearLayout
+    android:id="@+id/layout_states"
+    android:orientation="vertical"
+    android:layout_height="0dp"
+    android:layout_weight="0.5"
+    android:layout_width="match_parent">
+    <TextView
+        android:id="@+id/text_neaby"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="25sp"
+        android:textColor="#FFF"
+        android:text="NearBy"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/my_custom_background_linear"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        //insert Nearby states here
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_marginBottom="10dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:max="100"
+            android:backgroundTint="@color/color_progressbar"
+            android:layout_below="@+id/framelauout"
+            android:indeterminateTint="#f2f2f4"
+            android:layout_marginTop="10dp"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+    </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

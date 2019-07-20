@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_free_user_map_activty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.demo.festivalapp.festivalapp.Activities.FreeUserMapActivty"
+    tools:showIn="@layout/activity_free_user_map_activty"
+    android:orientation="vertical">
+    <ProgressBar
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:id="@+id/festival_homeprogress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:max="100"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_below="@+id/framelauout"
+        android:indeterminateTint="#f2f2f4" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_error_loading"
+        android:text="No Map found"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/img_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ProgressBar
+        android:id="@+id/info_homeprogress"
+        android:theme="@style/AppTheme.WhiteAccent"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="100dp" />
+</LinearLayout>

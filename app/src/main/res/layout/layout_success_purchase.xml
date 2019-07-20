@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:gravity="center"
+    android:background="@drawable/border_editext"
+    android:id="@+id/bedLcl"
+    android:orientation="vertical" >
+    <TextView
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Please kill aap and Restart Again to access new features"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="-50dp" >
+            <android.support.v7.widget.AppCompatButton
+                android:layout_margin="20dp"
+                android:id="@+id/btn_contiue"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/bg_btn_continue"
+                android:textColor="#000"
+                android:text="Continue"/>
+        </LinearLayout>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/imageView_close"
+            android:layout_width="42dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="top|left"
+            android:clickable="true"
+            android:src="@drawable/dialogue_cancel" />
+
+    </FrameLayout>
+
+</LinearLayout>

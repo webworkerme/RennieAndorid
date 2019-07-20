@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:actionLayout="@layout/menu_action_count_view"
+        android:id="@+id/action_purchaseapp"
+        android:title="@string/action_purchase_app" />
+    <item
+        android:id="@+id/action_suggestion"
+        android:orderInCategory="100"
+        android:title="@string/action_purchase_suggestion" />
+    <item
+        android:visible="false"
+        android:id="@+id/action_add_marker"
+        android:orderInCategory="101"
+        android:title="@string/action_add_marker" />
+    <item
+        android:visible="false"
+        android:id="@+id/action_clear_marker"
+        android:orderInCategory="101"
+        android:title="@string/action_clear_marker" />
+    <item
+        android:visible="false"
+        android:id="@+id/action_my_wishlist"
+        android:orderInCategory="101"
+        android:title="@string/action_my_wishlist" />
+    <item
+        android:visible="false"
+        android:id="@+id/action_suggestions"
+        android:orderInCategory="101"
+        android:title="@string/action_suggestions" />
+</menu>

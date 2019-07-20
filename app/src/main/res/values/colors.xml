@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#000</color>
+    <color name="splashbg">#000</color>
+    <color name="color_progressbar">#FFF</color>
+    <color name="album_title">#4c4c4c</color>
+    <color name="color_selcted_filter">#25A8D8</color>
+    <color name="color_notification_Screen">#e93e35</color>
+    <color name="colorerror">#ef282b</color>
+</resources>

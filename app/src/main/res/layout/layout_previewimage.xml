@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/splashbg"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:weightSum="2"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1.5">
+    <ImageView
+        android:gravity="center"
+        android:id="@+id/image_preview"
+        android:scaleType="fitXY"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_height="0dp"
+        android:weightSum="4"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="0.5">
+        <LinearLayout
+            android:background="@drawable/my_custom_background_linear"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/name_wishlist_item"
+                android:textStyle="bold"
+                android:textColor="#FFF"
+                android:hint="Enter Name"
+                android:textColorHint="#FFF"
+                android:textSize="10sp"
+                android:paddingLeft="20dp"
+                android:layout_gravity="left|center"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+          android:background="@drawable/my_custom_background_linear"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:paddingLeft="10dp"
+                android:text="clothing"
+                android:textColor="#FFF"
+                android:id="@+id/spinner_textview"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/wishlist_arrays"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/my_custom_background_linear"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/wish_latlng"
+                android:textStyle=""
+                android:textColor="#FFF"
+                android:text="Location lat 33.6844° N, lng 73.0479° E"
+                android:textAllCaps="true"
+                android:textSize="10sp"
+                android:paddingLeft="20dp"
+                android:layout_gravity="left|center"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/my_custom_background_linear"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/text_notes"
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:hint="Enter Notes"
+                android:textSize="10sp"
+                android:paddingLeft="20dp"
+                android:layout_gravity="left|center"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

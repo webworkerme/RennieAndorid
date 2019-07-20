@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- The following View represent the content. Note the margin -->
+    <LinearLayout
+        android:id="@+id/bedLcl"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_dialogue"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="40dp"
+        android:weightSum="2"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="0dp"
+            android:layout_weight="1.6"
+            android:gravity="center"
+            android:layout_width="match_parent">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Do u want to delete reminder??"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="bottom"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:orientation="horizontal"
+            android:layout_width="match_parent">
+            <Button
+                android:id="@+id/btn_no"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:background="@drawable/reminder_dialogue_btns"
+                android:layout_weight="1"
+                android:text="Not Now"/>
+            <Button
+                android:id="@+id/btn_yes"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:background="@drawable/bg_btn_new"
+                android:layout_weight="1"
+                android:text="Sure"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        android:layout_gravity="top|center"
+        android:src="@drawable/clock_new" />
+</FrameLayout>
